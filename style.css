@@ -620,7 +620,8 @@ header{
 }
 
 .logo-img {
-    width: inherit;
+    width: 250px;
+    height: 61px;
 }
 
 .office .logo{
