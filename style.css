@@ -207,9 +207,9 @@ header{
 
 /* -----------section-hero---------------- */
 
-.section-hero{
+/* .section-hero{
     padding: 9.875rem 1.875rem;
-}
+} */
 .content{
     display: flex;
     justify-content: center;
@@ -992,3 +992,184 @@ header{
         grid-column: 1/-1;
     }
 }
+
+  @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+  
+  :root {
+    --bright-red: hsl(12, 88%, 59%);
+    --dark-blue: hsl(228, 39%, 23%);
+    --dark-grayish-blue: hsl(227, 12%, 61%);
+    --very-dark-blue: hsl(233, 12%, 13%);
+    --very-pale-red: hsl(13, 100%, 96%);
+    --very-light-grey: hsl(0, 0%, 98%);
+    --font-vietnam: "Be Vietnam Pro";
+  }
+  
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 0.875rem;
+    background-color: var(--very-pale-red);
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font-vietnam);
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+  
+  .testimonials__head {
+    font-size: 2.3em;
+    padding: 2rem 0;
+    color: var(--dark-blue);
+  }
+  
+  .carousel__container {
+    position: relative;
+    padding: 2rem;
+  }
+  
+  .carousel__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 4rem 0;
+    position: relative;
+    display: none;
+  }
+  
+  .carousel__item--selected {
+    display: flex;
+  }
+  
+  img[alt="user__avatar"] {
+    width: 25%;
+    position: absolute;
+    top: -30px;
+  }
+  
+  .testimonial__block {
+    background: var(--very-light-grey);
+    padding: 5rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .name {
+    font-size: 1.2em;
+    color: var(--dark-blue);
+  }
+  
+  .testimonial__paragraph {
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.7rem;
+    padding: 1rem 0;
+    color: var(--dark-grayish-blue);
+  }
+  
+  .carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__btn {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1.5px solid var(--bright-red);
+    background: transparent;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.5s ease-in;
+  }
+  
+  .carousel__btn--selected {
+    background-color: var(--bright-red);
+  }
+  
+  .carousel__action__btn {
+    color: white;
+    background-color: var(--bright-red);
+    margin: 2rem 0;
+    padding: 1rem 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 1px 10px 6px var(--very-pale-red);
+  }
+  
+  @media (500px <= width <= 915px) {
+    body {
+      font-size: 0.9375rem;
+    }
+  
+    .carousel__container {
+      padding: 2rem 8rem;
+    }
+  
+    img[alt="user__avatar"] {
+      bottom: 2rem;
+      width: 20%;
+    }
+  
+    .testimonial__block {
+      padding: 6rem 1.5rem 1rem 1.5rem;
+    }
+  }
+  
+  @media (width >= 916px) {
+      body{
+          font-size: 1.1rem;
+      }
+  
+    .testimonials {
+      margin: 5rem auto;
+      max-width: 50%;
+    }
+  
+    img[alt="user__avatar"] {
+      width: 15%;
+    }
+  
+    .testimonial__block {
+      padding: 6rem 3rem 3rem 3rem;
+      width: 100%;
+    }
+  }
+  
+  @media(width >= 1500px ){
+    .testimonials {
+      margin: 5rem auto;
+      max-width: 30%;
+    }
+  
+  }
+        
