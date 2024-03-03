@@ -18,7 +18,7 @@
     <header class="container" id="header">
         <div class="navbar maxsize">
             <div class="logo">
-                <img src="logo_full.webp" class="logo-img">
+                <img src="logo_transparent.png" class="logo-img">
             </div>
             <div id="menu-icon"><span class="bars"><i class="fas fa-bars"></i></span><span class="cross"><i
                         class="fas fa-times"></i></span></div>
@@ -70,7 +70,7 @@
                             <div class="form-group">
                                 <label for="telephone">Telephone</label>
                                 <input name="Telephone" type="tel" id="telephone" class="form-control"
-                                    placeholder="9876543210" required />
+                                    placeholder="9876543210" required pattern="[0-9]{10}" />
                             </div>
                         </div>
                         <div class="col-12 col-sm-6">
@@ -79,9 +79,9 @@
                                 <select name="Purpose" id="select" class="form-control"
                                     aira-describedby="select-helpBlock" required>
                                     <option value="">- select here -</option>
-                                    <option value="business">Business</option>
-                                    <option value="Sale">Sale</option>
+                                    <option value="Brand Growth">Brand Growth</option>
                                     <option value="Support">Support</option>
+                                    <option value="Career">Career</option>
                                 </select>
                                 <small id="select-helpBlock" class="form-text">Please select the recipient of
                                     your message.</small>
@@ -122,6 +122,9 @@
     <footer class="container">
         <div class="section-footer maxsize">
             <div class=" js-scroll fade-in-up">
+                <div class="logo">
+                    <img src="logo_transparent.png" class="logo-img">
+                </div>
                 <div class="address js-scroll fade-in-up"><span><strong>Our office:</strong></span> <br>
                     N, 24A, Green Park Ext Rd, Block N, Green Park Extension, <br>
                     Green Park, New Delhi, Delhi 110016, India
