@@ -1126,7 +1126,7 @@ header{
     box-shadow: 1px 10px 6px var(--very-pale-red);
   }
   
-  @media (500px <= width <= 915px) {
+  @media (200px <= width <= 715px) {
     body {
       font-size: 0.9375rem;
     }
@@ -1141,7 +1141,7 @@ header{
     }
   
     .testimonial__block {
-      padding: 6rem 1.5rem 1rem 1.5rem;
+      padding: 3rem 1.5rem 1rem 1.5rem;
     }
   }
   
@@ -1160,8 +1160,8 @@ header{
     }
   
     .testimonial__block {
-      padding: 6rem 3rem 3rem 3rem;
-      width: 100%;
+      padding: 3rem 1rem 1rem 1rem;
+      width: 50%;
     }
   }
   
@@ -1172,4 +1172,65 @@ header{
     }
   
   }
-        
+ /* Carousel Robby */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f2f2f2;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
+  
