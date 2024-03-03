@@ -621,7 +621,6 @@ header{
 
 .logo-img {
     width: 250px;
-    height: 61px;
 }
 
 .office .logo{
@@ -898,7 +897,7 @@ header{
         display: block;
     }
     .navbar{
-        padding: 16px 50px;
+        padding: 0 0;
     }
     .block-content{
         max-width: 500px;
@@ -939,6 +938,7 @@ header{
     }
     .section-review{
         grid-template-columns: 1fr 1fr;
+        padding: 0rem 0rem;
     }
     .review-content{
         grid-column: 1/span 2;
@@ -950,6 +950,9 @@ header{
     }
     .review-content h1,.review-content p,.review-content a{
         text-align: center;
+    }
+    .logos {
+        padding: 0 0;
     }
 }
 
@@ -970,6 +973,7 @@ header{
     .section-footer{
         grid-template-columns: auto;
         justify-content: center;
+        padding: 0 0;
     }
     .section-footer> div{
         display: flex;
@@ -985,10 +989,15 @@ header{
         flex-flow: column nowrap;
         justify-content: center;
         margin-bottom: 4rem;
+        padding: 0 0;
     }
     .doc-box-shadow {
         max-width: fit-content;
         height: 280px;
+    }
+    .logo-img {
+        max-width: 80%;
+        /* max-height: 30%; */
     }
 }
 
