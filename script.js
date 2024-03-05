@@ -131,3 +131,5 @@ document.querySelectorAll(".carousel__container").forEach((carousel) => {
         });
     });
 });
+
+document.addEventListener('touchmove', event => event.scale !== 1 && event.preventDefault(), { passive: false });
